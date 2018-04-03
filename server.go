@@ -57,10 +57,10 @@ func aboutMeRouteHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	// data
 	p := Person{
-		FirstName: "Trevor James",
-		LastName:  "Oluotch",
-		Based:     "Comp Sci 2nd Year @ City University London",
-		Email:     "trevorjoluotch@gmail.com"}
+		FirstName: "Bob",
+		LastName:  "Builder",
+		Based:     "Builder University",
+		Email:     "Bob@builder.com"}
 	// encoding data into jason for the frontend
 	json.NewEncoder(w).Encode(p)
 }
